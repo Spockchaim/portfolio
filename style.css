@@ -5,7 +5,7 @@ body{
     font-weight: 5000;   
 }
 
-h1 {
+h1, h2 {
     font-size:larger;
     font-weight: 700;
 }
@@ -14,21 +14,24 @@ h1 {
 opacity: 80%;
 size: 90%;
 border: 4px dashed lightblue;
+max-height: fit-content;
 }
 
 .about{
 background-color: hsl(34, 78%, 91%, 90%);
+border: 3px solid lightblue;
+max-height: fit-content;
 }
 
 .img_profile{
 max-width: 150px;
 height: auto;
 border-radius: 50%;
-border: 2px solid rgb(225, 239, 225);
+border: 2px solid lightblue;
 }
 
 .card-img-top{
-    size: cover;
+    max-width: 700px;
 }
 
 main{
