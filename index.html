@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio - Pedro Chaim</title>
+  </head>
+  <body>
+    <div class="mb-5 cont sticky-top">
+      <header>
+        <!-- Nav Hamburguer - Sobre, projetos -->
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid ">
+            <div>
+            </div>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuVazio"
+            aria-controls="menuVazio"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <a href="https://github.com/spockchaim"><img src="img/linkedin_gif.gif" alt="Github" width="50" height="50" /></a>
+            <a href="https://github.com/spockchaim"><img src="img/github_gif.gif" alt="Github" width="50" height="50" /></a>
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuVazio">
+              <!-- Sem itens dentro -->
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="container-fluid">
+        <section class="principal row">
+            <div class="col-6 offset-1">
+              <h1 class="mb-3 text-right">Hello World, sou o Pedro.</h1>
+              <p class="text-center">
+                Aluno de Desenvolvimento de Software na FATEC de São José dos Campos.
+                <br>
+                <br> 
+                Neste portofólio você poderá saber mais sobre minhas habilidades e projetos que participei.
+
+                </p>
+            </div>
+            <div class="col-2">
+                <img class="img_profile" src="img/profile-img.png" alt="">
+            </div>
+          </section>
+      </div>    
+      <section>
+        <div class="container-fluid row mt-5 mb-5 img">
+              <div class="card col-3 offset-1" style="width:400px">
+                 <img class="card-img-top" src="/img/Nova pasta/projeto1.png" alt="Print do site Clube do Milho">
+                  <div class="card-body">
+                    <h4 class="card-title">Clube do Milho</h4>
+                    <p class="card-text">Fun site para entusiastas de milho.</p>
+                    <a href="#" class="btn btn-primary">Github</a>
+                  </div>
+               </div>
+               <div class="card col-3 offset-1" style="width: 400px;">
+                <img class="card-img-top" src="/img//Nova pasta/projeto2.png" alt="Print JanoSys">
+                  <div class="card-body">
+                    <h4 class="card-title">JanoSys IBGE</h4>
+                    <p class="card-text">Projeto de representação de dados do IBGE referentes a cidade São José dos Campos(SP)</p>
+                    <a href="#" class="btn btn-primary">Github</a>  
+                  </div>
+               </div>
+         </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

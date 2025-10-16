@@ -1,0 +1,38 @@
+body{
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 5000;   
+}
+
+h1 {
+    font-size:larger;
+    font-weight: 700;
+}
+
+.navbar{
+opacity: 80%;
+size: 90%;
+border: 4px dashed lightblue;
+}
+
+.about{
+background-color: hsl(34, 78%, 91%, 90%);
+}
+
+.img_profile{
+max-width: 150px;
+height: auto;
+border-radius: 50%;
+border: 2px solid rgb(225, 239, 225);
+}
+
+.card-img-top{
+    size: cover;
+}
+
+main{
+    color: black;
+    opacity: 80%; 
+    border-style: ;
+}
