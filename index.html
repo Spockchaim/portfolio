@@ -10,44 +10,92 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Portifolio - Pedro Chaim</title>
   </head>
   <body>
     <div class="mb-5 cont sticky-top">
       <header>
         <!-- Nav -->
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
           <div class="container-fluid">
-            <div class="navbar-local">
-              <a href="#habilidades">Habilidades |</a>
-              <a href="#projetos">Projetos |</a>
-              <a href="#certificados">Certificados</a>
-            </div>
-            <div class="contato">
-              <a href="https://github.com/spockchaim"
-                ><img
-                  src="img/github_gif.gif"
-                  alt="Github"
-                  width="50"
-                  height="50"
-              /></a>
-              <a href="https://github.com/spockchaim"
-                ><img
-                  src="img/linkedin_gif.gif"
-                  alt="Linkedin"
-                  width="50"
-                  height="50"
-              /></a>
-              <a href="https://wa.me/5512991583694?text=Hello%2C%20Pedro."
-                ><img
-                  src="img/whastapp_gif.gif"
-                  alt="Whatsapp"
-                  width="50"
-                  height="50"
-              /></a>
-            </div>
+            <!-- 1. Botão "Hambúrguer" para telas pequenas -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarPrincipal"
+              aria-controls="navbarPrincipal"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-archive"></i>
+            </button>
 
-            <div class="collapse navbar-collapse" id="menuVazio"></div>
+            <!-- 2. Conteúdo que será colapsado -->
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+              <!-- 3. Lista de links de navegação -->
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#certificados">Certificados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#eventos">Eventos e Comunidade</a>
+                </li>
+              </ul>
+              <hr class="d-md-none text-black-90" />
+              <!-- 4. Lista de ícones de contato -->
+              <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                  <a class="nav-link p-2" href="https://github.com/spockchaim">
+                    <img
+                      src="img/github_gif.gif"
+                      alt="Github"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-2"
+                    href="https://www.linkedin.com/in/pedrochaim/"
+                  >
+                    <img
+                      src="img/linkedin_gif.gif"
+                      alt="Linkedin"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-2"
+                    href="https://wa.me/5512991583694?text=Hello%2C%20Pedro."
+                  >
+                    <img
+                      src="img/whastapp_gif.gif"
+                      alt="Whatsapp"
+                      width="32"
+                      height="32"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>
@@ -55,8 +103,9 @@
     <main>
       <!-- About-me -->
       <section class="principal row">
-        <div class="col-6 offset-1 about">
-          <h1 class="mb-3 text-center hero-text-only">Hello World.</h1>
+        <div class="col-1"></div>
+        <div class="col-8 about cardd-flex flex-column justify-content-center">
+          <h1 class="mb-3 text-center hero-text-only">Hello World</h1>
           <p class="text-justify">
             Sou o Pedro, apaixonado por tecnologias, curioso inveterado e aluno
             de Desenvolvimento de Software na FATEC de São José dos Campos.
@@ -70,40 +119,132 @@
             Sinta-se à vontade para explorar e entrar em contato!
           </p>
         </div>
-        <div class="col-2">
-          <img class="img_profile" src="img/profile-img.png" alt="" />
-        </div>
+        <div class="col-1"></div>
       </section>
-      <!-- Habilidades - Icons -->
+      <!-- Habilidades -->
       <section id="habilidades" class="container-fluid row mt-5 mb-5 img">
-        <h2 class="text-center mb-4 hero-text-only">Habilidades</h2>
-        <div class="card" style="width: 400px">
-          <div class="card-body">
-            <h4 class="card-title">Java</h4>
-            <p class="card-text"><br />Sou capaz de criar sistemas com inputs, outputs e lógica de programação.</p>
+        <h2 class="text-center mb-5 hero-text-only">Habilidades</h2>
+
+        <div class="interpessoal col">
+          <div>
+            <h3 class="text-center mb-4">Interpessoais<i class="bi bi-people ms-3"></i></h3>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center gap-4"
+            >
+              <div class="card" style="width: 400px">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Boa Comunicação Interpessoal</h4>
+                  <p class="card-text">
+                    Busco sempre me comunicar de forma clara e objetiva, sempre
+                    respeitando as viências do outro.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 400px">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Auto Gerência</h4>
+                  <p class="card-text">
+                    Execução sempre orientada a fazer entregas de qualidade,
+                    porém de forma ágil.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 400px">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Busca de Conhecimento</h4>
+                  <p class="card-text">
+                    Sempre fui extremamente curioso, e na vida profissional
+                    procuro levar essa qualidade como forma de me manter sempre
+                    atualizado e na busca por novas tecnologias.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 400px">
-          <div class="card-body">
-            <h4 class="card-title">Kotlin</h4>
-            <p class="card-text">
-              <br />Sou capaz de criar sistemas com inputs, outputs e lógica de programação.
-            </p>
+        <div id="backend" class="col">
+          <h3 class="text-center mb-4">Backend<i class="bi bi-database ms-3"></i></h3>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-4"
+          >
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Java</h4>
+                <p class="card-text">
+                  Sou capaz de criar sistemas com inputs, outputs e lógica de
+                  programação.
+                </p>
+              </div>
+            </div>
+            <div></div>
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Kotlin </h4>
+                <p class="card-text">
+                  Sou capaz de criar sistemas com inputs, outputs e lógica de
+                  programação.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Python</h4>
+                <p class="card-text">
+                  Sou capaz de criar sistemas com inputs, outputs e lógica de
+                  programação.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Versionamento</h4>
+                <p class="card-text">
+                  Sou capaz de trabalhar com versionamento de arquivos através
+                  do git.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">AWS</h4>
+                <p class="card-text">
+                  Sou capaz de criar imagens de projetos e fazer deploy
+                  utilizando EC2 e RDS.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 400px">
-          <div class="card-body">
-            <h4 class="card-title">Python</h4>
-            <p class="card-text"><br />Sou capaz de criar sistemas com inputs, outputs e lógica de programação.</p>
+        <div id="frontend" class="col">
+          <h3 class="text-center mb-4">Frontend<i class="bi bi-card-image ms-3"></i></h3>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-4"
+          >
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">HTML</h4>
+                <p class="card-text">
+                  Sou capaz de criar sites responsivos e acessíveis.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title mb-4">CSS</h4>
+                <p class="card-text">
+                  Sou capaz de criar layouts responsivos e estilizados.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- Projetos - Cards -->
       <section id="projetos" class="container-fluid row mt-5 mb-5 img">
-        <h2 class="text-center mb-4 hero-text-only">Projetos</h2>
+        <h2 class="text-center mb-4 hero-text-only">Projetos<i class="bi bi-file-bar-graph ms-3"></i></h2>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">Clube do Milho</h4>
+            <h4 class="card-title mb-4">Clube do Milho</h4>
             <p class="card-text"><br />Fun site para entusiastas de milho.</p>
             <a
               href="https://github.com/Spockchaim/Clube_do_Milho"
@@ -119,7 +260,7 @@
         </div>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">JanoSys IBGE</h4>
+            <h4 class="card-title mb-4">JanoSys IBGE</h4>
             <p class="card-text">
               <br />Projeto de representação de dados do IBGE referentes a
               cidade São José dos Campos(SP)
@@ -138,7 +279,7 @@
         </div>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">Bar Buraco-do-Tatu</h4>
+            <h4 class="card-title mb-4">Bar Buraco-do-Tatu</h4>
             <p class="card-text"><br />Um bar temático. <br /></p>
             <a
               href="https://github.com/Spockchaim/bar-buraco-do-tatu"
@@ -158,19 +299,20 @@
         id="certificados"
         class="certificados container-fluid row mt-5 mb-5 img"
       >
-        <h2 class="text-center mb-4 hero-text-only">Certificados</h2>
+        <h2 class="text-center mb-4 hero-text-only">Certificados<i class="bi bi-mortarboard ms-3"></i></h2>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">Java Fundamentals</h4>
+            <h4 class="card-title mb-4">Java Fundamentals</h4>
             <p class="card-text">
               06/2023 <br />
+              <br />
               Curso de introdução em Java da Oracle pelo Senac.
             </p>
           </div>
         </div>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">Java Foundations</h4>
+            <h4 class="card-title mb-4">Java Foundations</h4>
             <p class="card-text">
               12/2023 <br />
               <br />
@@ -180,7 +322,7 @@
         </div>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">Desenvolvimento para Android.</h4>
+            <h4 class="card-title mb-4">Desenvolvimento para Android.</h4>
             <p class="card-text">
               06/2024 <br />
               <br />
@@ -191,21 +333,76 @@
         </div>
         <div class="card" style="width: 400px">
           <div class="card-body">
-            <h4 class="card-title">Front End Senac</h4>
+            <h4 class="card-title mb-4">Front End Senac</h4>
             <p class="card-text">
               02/2024 <br />
               <br />
-              Curso frontend do Senac que abordou html, css, javascript e
-              bootstrap.
+              Curso frontend do Senac com HTML, CSS e JavaScript.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Eventos -->
+      <section id="eventos" class="eventos container-fluid row mt-5 mb-5 img">
+        <h2 class="text-center mb-4 hero-text-only">Eventos e Comunidade <i class="bi bi-people ms-3"></i></h2>
+        <div class="card" style="width: 18rem">
+          <img src="/img/maratonaSJC.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h4 class="card-title mb-4">Maratona FATEC</h4>
+            <p class="card-text">
+              Evento organizado pela Fatec São José dos Campos com foco em
+              desenvolvimento de lógica de programação.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="/img/pyday1.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h4 class="card-title mb-4">PyDay #1</h4>
+            <p class="card-text">
+              Primeiro PyDay, evento organizado comunidade PythonSJC e que
+              contou com palestras, workshops e reunião da comunidade Python de
+              São José dos Campos.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="/img/pyday2.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h4 class="card-title mb-4">PyDay #2</h4>
+            <p class="card-text">
+              Segundo PyDay, evento organizado comunidade PythonSJC e que contou
+              com palestras, workshops e reunião da comunidade Python de São
+              José dos Campos.
             </p>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="text-center p-3 bg-dark text-white">
-        © 2025 Copyright:
-        <a href="https://github.com/Spockchaim" class="rodape">Pedro Chaim</a>
+      <div class="rodape text-center p-3text-white bg-body-tertiary">
+        Contatos: Github
+        <a href="https://github.com/spockchaim"
+          ><img src="img/github_gif.gif" alt="Github" width="30" height="30"
+        /></a>
+        | Linkedin
+        <a href="https://www.linkedin.com/in/pedrochaim/"
+          ><img
+            src="img/linkedin_gif.gif"
+            alt="Linkedin"
+            width="30"
+            height="30"
+        /></a>
+        | Whatsapp
+        <a href="https://wa.me/5512991583694?text=Hello%2C%20Pedro."
+          ><img
+            src="img/whastapp_gif.gif"
+            alt="Whatsapp"
+            width="30"
+            height="30"
+        /></a>
+        <br />
+        © 2025 Copyright: Pedro Chaim
       </div>
     </footer>
   </body>
