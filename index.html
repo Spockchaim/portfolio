@@ -15,86 +15,197 @@
   <body>
     <div class="mb-5 cont sticky-top">
       <header>
-        <!-- Nav Hamburguer - Sobre, projetos -->
+        <!-- Nav -->
         <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid ">
-            <div>
+          <div class="container-fluid">
+            <div class="navbar-local">
+              <a href="#habilidades">Habilidades |</a>
+              <a href="#projetos">Projetos |</a>
+              <a href="#certificados">Certificados</a>
             </div>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuVazio"
-            aria-controls="menuVazio"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <a href="https://github.com/spockchaim"><img src="img/linkedin_gif.gif" alt="Linkedin" width="50" height="50" /></a>
-            <a href="https://github.com/spockchaim"><img src="img/github_gif.gif" alt="Github" width="50" height="50" /></a>
-            <a href="https://wa.me/5512991583694?text=Hello%2C%20Pedro."><img src="img/whastapp_gif.gif" alt="Whatsapp" width="50" height="50" /></a>
-            </button>
+            <div class="contato">
+              <a href="https://github.com/spockchaim"
+                ><img
+                  src="img/github_gif.gif"
+                  alt="Github"
+                  width="50"
+                  height="50"
+              /></a>
+              <a href="https://github.com/spockchaim"
+                ><img
+                  src="img/linkedin_gif.gif"
+                  alt="Linkedin"
+                  width="50"
+                  height="50"
+              /></a>
+              <a href="https://wa.me/5512991583694?text=Hello%2C%20Pedro."
+                ><img
+                  src="img/whastapp_gif.gif"
+                  alt="Whatsapp"
+                  width="50"
+                  height="50"
+              /></a>
+            </div>
 
-            <div class="collapse navbar-collapse" id="menuVazio">
-              <!-- Sem itens dentro -->
-            </div>
+            <div class="collapse navbar-collapse" id="menuVazio"></div>
           </div>
         </nav>
       </header>
     </div>
     <main>
-      <div class="container-fluid">
-        <section class="principal row">
-            <div class="col-6 offset-1 about">
-              <h1 class="mb-3 text-center">Hello World, sou o Pedro.</h1>
-              <p class="text-justify">
-                Aluno de Desenvolvimento de Software na FATEC de São José dos Campos, apaixonado por tecnologia e curioso inveterado.
-                <br>
-                <br> 
-                Neste portofólio você poderá saber mais sobre minhas habilidades e projetos que participei.
-                </p>
-            </div>
-            <div class="col-1"></div>
-            <div class="col-2">
-                <img class="img_profile" src="img/profile-img.png" alt="">
-            </div>
-          </section>
-      </div>    
-      <section>
-        <div class="container-fluid row mt-5 mb-5 img">
-          <h2 class="text-center mb-4">Meus Projetos</h2>
-              <div class="card col-3 offset-2" style="width:400px">
-                 <img class="card-img-top" src="/img/Nova pasta/projeto1.png" alt="Print do site Clube do Milho">
-                  <div class="card-body">
-                    <h4 class="card-title">Clube do Milho</h4>
-                    <p class="card-text">Fun site para entusiastas de milho.</p>
-                    <a href="https://github.com/Spockchaim/Clube_do_Milho" class="btn btn-primary">Github</a>
-                    <a href="https://clube-do-milho.vercel.app/" class="btn btn-secondary">Vercel</a>
-                  </div>
-               </div>
-               <div class="card col-3 offset-2" style="width: 400px;">
-                <img class="card-img-top" src="/img//Nova pasta/projeto2.png" alt="Print JanoSys">
-                  <div class="card-body">
-                    <h4 class="card-title">JanoSys IBGE</h4>
-                    <p class="card-text">Projeto de representação de dados do IBGE referentes a cidade São José dos Campos(SP)</p>
-                    <a href="https://github.com/janosystime/Janosys-Project" class="btn btn-primary">Github</a>
-                    <a href="https://janosys-project-api1.vercel.app/" class="btn btn-secondary">Vercel</a>
-                  </div>
-               </div>
-               <div class="card col-3 offset-2" style="width: 400px;">
-                <img class="card-img-top" src="/img/projeto3.jpg" alt="Bar do Tatu">
-                  <div class="card-body">
-                    <h4 class="card-title">Bar Buraco-do-Tatu</h4>
-                    <p class="card-text">Um bar temático.</p>
-                    <a href="https://github.com/Spockchaim/bar-buraco-do-tatu" class="btn btn-primary">Github</a>
-                    <a href="https://bar-buraco-do-tatu.vercel.app" class="btn btn-secondary">Vercel</a>  
-                  </div>
-               </div>
-         </div>
+      <!-- About-me -->
+      <section class="principal row">
+        <div class="col-6 offset-1 about">
+          <h1 class="mb-3 text-center hero-text-only">Hello World.</h1>
+          <p class="text-justify">
+            Sou o Pedro, apaixonado por tecnologias, curioso inveterado e aluno
+            de Desenvolvimento de Software na FATEC de São José dos Campos.
+            <br />
+            <br />
+            Neste portofólio você poderá conhecer um pouco de mim e saber mais
+            sobre minhas habilidades e projetos que participei na área de
+            programação.
+            <br />
+            <br />
+            Sinta-se à vontade para explorar e entrar em contato!
+          </p>
+        </div>
+        <div class="col-2">
+          <img class="img_profile" src="img/profile-img.png" alt="" />
+        </div>
+      </section>
+      <!-- Habilidades - Icons -->
+      <section id="habilidades" class="container-fluid row mt-5 mb-5 img">
+        <h2 class="text-center mb-4 hero-text-only">Habilidades</h2>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Java</h4>
+            <p class="card-text"><br />Sou capaz de criar sistemas com inputs, outputs e lógica de programação.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Kotlin</h4>
+            <p class="card-text">
+              <br />Sou capaz de criar sistemas com inputs, outputs e lógica de programação.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Python</h4>
+            <p class="card-text"><br />Sou capaz de criar sistemas com inputs, outputs e lógica de programação.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Projetos - Cards -->
+      <section id="projetos" class="container-fluid row mt-5 mb-5 img">
+        <h2 class="text-center mb-4 hero-text-only">Projetos</h2>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Clube do Milho</h4>
+            <p class="card-text"><br />Fun site para entusiastas de milho.</p>
+            <a
+              href="https://github.com/Spockchaim/Clube_do_Milho"
+              class="btn btn-primary"
+              >Github</a
+            >
+            <a
+              href="https://clube-do-milho.vercel.app/"
+              class="btn btn-secondary"
+              >Vercel</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">JanoSys IBGE</h4>
+            <p class="card-text">
+              <br />Projeto de representação de dados do IBGE referentes a
+              cidade São José dos Campos(SP)
+            </p>
+            <a
+              href="https://github.com/janosystime/Janosys-Project"
+              class="btn btn-primary"
+              >Github</a
+            >
+            <a
+              href="https://janosys-project-api1.vercel.app/"
+              class="btn btn-secondary"
+              >Vercel</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Bar Buraco-do-Tatu</h4>
+            <p class="card-text"><br />Um bar temático. <br /></p>
+            <a
+              href="https://github.com/Spockchaim/bar-buraco-do-tatu"
+              class="btn btn-primary"
+              >Github</a
+            >
+            <a
+              href="https://bar-buraco-do-tatu.vercel.app"
+              class="btn btn-secondary"
+              >Vercel</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Certificados -->
+      <section
+        id="certificados"
+        class="certificados container-fluid row mt-5 mb-5 img"
+      >
+        <h2 class="text-center mb-4 hero-text-only">Certificados</h2>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Java Fundamentals</h4>
+            <p class="card-text">
+              06/2023 <br />
+              Curso de introdução em Java da Oracle pelo Senac.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Java Foundations</h4>
+            <p class="card-text">
+              12/2023 <br />
+              <br />
+              Curso complementar Java Foundations da Oracle pelo Senac.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Desenvolvimento para Android.</h4>
+            <p class="card-text">
+              06/2024 <br />
+              <br />
+              Curso de Desenvolvimento de Aplicações para Android utilizando
+              Kotlin pelo Senai.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 400px">
+          <div class="card-body">
+            <h4 class="card-title">Front End Senac</h4>
+            <p class="card-text">
+              02/2024 <br />
+              <br />
+              Curso frontend do Senac que abordou html, css, javascript e
+              bootstrap.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <div class="text-center p-3 bg-dark text-white">
-        © 2025 Copyright: <a href="https://github.com/Spockchaim" class="rodape">Pedro Chaim</a>
+        © 2025 Copyright:
+        <a href="https://github.com/Spockchaim" class="rodape">Pedro Chaim</a>
       </div>
     </footer>
   </body>
