@@ -6,9 +6,15 @@ body{
 }
 
 h1, h2 {
-  color: lightblue;
+    color: black;
     font-size:larger;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+h3 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 header {
@@ -48,12 +54,12 @@ max-height: fit-content;
 }
 
 .img_profile{
-
-max-width: 150px;
+max-width: 100px;
 height: auto;
 border-radius: 50%;
 border: 2px solid lightblue;
 }
+
 
 #certificados, #projetos, #habilidades {
   justify-content: space-evenly;
@@ -91,22 +97,27 @@ border: 2px solid lightblue;
     border: 2px solid lightblue;
     color: lightblue;
 } 
-main{
-    color: black;
-    opacity: 80%; 
-    border-style: ;
-}
 
+footer
 .rodape {
-    text-decoration: none;
-    color: lightblue;
+      opacity: 90%;
+  size: 90%;
+  border: 4px dashed lightblue;
+  max-height: fit-content;
 }
 
+
+#eventos {
+  justify-content: center;
+  
+}
 .hero-text-only {
     color: #040009;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
+
+
