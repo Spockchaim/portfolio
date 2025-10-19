@@ -57,7 +57,7 @@ max-height: fit-content;
 max-width: 100px;
 height: auto;
 border-radius: 50%;
-border: 2px solid lightblue;
+border: 5px dashed lightblue;
 }
 
 
