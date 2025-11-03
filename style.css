@@ -62,7 +62,7 @@ border: 5px dashed lightblue;
 
 
 #certificados, #projetos, #habilidades {
-  justify-content: space-evenly;
+  justify-content: space-around ;
   text-decoration: none;
   color: lightblue;
   opacity: 100%;
