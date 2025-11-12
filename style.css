@@ -3,6 +3,7 @@ body{
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 5000;   
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -75,7 +76,7 @@ border: 5px dashed lightblue;
   gap: 16px;
   border: 2px solid lightblue;
   margin: 10px ;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   background-color: hsl(34, 78%, 91%);}
 
